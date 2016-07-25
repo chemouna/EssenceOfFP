@@ -1,0 +1,123 @@
+
+./app/Main.hs,52
+module Main Main0,1
+main main4,5
+main main5,6
+
+./Setup.hs,15
+main main1,2
+
+./src/Common/Interpreter.hs,714
+module Common.Interpreter Common.Interpreter1,2
+data M M5,6
+returnM returnM7,8
+returnM returnM8,9
+bindM bindM10,11
+bindM bindM11,12
+data Value Value15,16
+data Value = WrongWrong15,16
+           | Num Num16,17
+           | Fun Fun17,18
+showint showint19,20
+showint showint20,21
+showval showval22,23
+showval showval23,24
+type Name Name27,28
+data Term Term28,29
+data Term = Var Var28,29
+          | Con Con29,30
+          | Add Add30,31
+          | Lam Lam31,32
+          | App App32,33
+type Environment Environment33,34
+lookup lookup35,36
+lookup lookup36,37
+add add39,40
+add add40,41
+apply apply43,44
+apply apply44,45
+interp interp47,48
+interp interp48,49
+
+./src/ErrorsMessages.hs,344
+module ErrorsMessages ErrorsMessages1,2
+data E E8,9
+data E a = Success Success8,9
+data E a = Success a | Error Error8,9
+returnE returnE9,10
+errorE errorE10,11
+(Success a) `bindE`bindE12,13
+showE showE15,16
+lookupE lookupE18,19
+lookupE lookupE19,20
+addE addE22,23
+addE addE23,24
+applyE applyE26,27
+applyE applyE27,28
+
+./src/ErrorsWithPosition.hs,276
+module ErrorsWithPosition ErrorsWithPosition1,2
+data PositionPosition8,9
+type P P9,10
+type P a a9,10
+showpos showpos11,12
+pos0 pos012,13
+returnP returnP14,15
+errorP errorP15,16
+m `bindP`bindP17,18
+showP showP18,19
+resetP resetP20,21
+resetP resetP21,22
+
+./src/Identitiy.hs,221
+module Identity Identity1,2
+lookupI lookupI7,8
+lookupI lookupI8,9
+addI addI11,12
+addI addI12,13
+applyI applyI15,16
+applyI applyI16,17
+interpI interpI19,20
+interpI interpI20,21
+--interpI --interpI24,25
+
+./src/Identity.hs,222
+module Identity Identity1,2
+lookupI lookupI8,9
+lookupI lookupI9,10
+addI addI12,13
+addI addI13,14
+applyI applyI16,17
+applyI applyI17,18
+interpI interpI20,21
+interpI interpI21,22
+--interpI --interpI25,26
+
+./src/Lib.hs,65
+module LibLib0,1
+someFunc someFunc4,5
+someFunc someFunc5,6
+
+./src/StandardInterpreter.hs,143
+module StandardInterpreter StandardInterpreter1,2
+type I I7,8
+type I a a7,8
+returnI returnI8,9
+a `bindI`bindI9,10
+showI showI10,11
+
+./src/State.hs,184
+type State State4,5
+type S S5,6
+type S a a5,6
+returnS returnS7,8
+m `bindS`bindS8,9
+showS showS13,14
+tickS tickS16,17
+tickS tickS17,18
+add add19,20
+apply apply20,21
+
+./test/Spec.hs,30
+main main0,1
+main main1,2
