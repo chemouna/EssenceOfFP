@@ -1,6 +1,6 @@
 module State where
 
-import Common.Interpreter
+import Common.Interpreter hiding (Term)
 
 type State = Int 
 type S a = State -> (a, State)
@@ -19,3 +19,17 @@ tickS = \s -> ((), s+1)
 
 add (Num i) (Num j) = tickS `bindS` (\() -> returnS (Num (i + j)))
 apply (Fun k) a = tickS `bindS` (\() -> returnS (k a)) -- not sure of returnS being here 
+
+fetchS :: S State
+fetchS = \s -> (s,s)
+
+data Term = Var Name
+          | Con Int
+          | Add Term Term
+          | Lam Name Term
+          | App Term Term
+          | Count
+
+interp Count e = fetchS `bindS` (\i -> returnS (Num i))
+
+
