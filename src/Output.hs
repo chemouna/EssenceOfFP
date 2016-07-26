@@ -22,3 +22,4 @@ interp (Out u) e = interp u e `bindO` (\a ->
                     outO a `bindO` (\() ->
                     returnO a))
 
+-- (Add (Out (Con 41)) (Out (Con 1)))
